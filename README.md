@@ -1,3 +1,31 @@
+
+The business of mountain hut is observed to have a few specific characteristics.
+- A group of limited users, to be specific, mountain hikers.
+- The huts, located on mountains, may not have access to the internet, some probably can't receive wireless signals.
+- During the winter season, many huts are closed as the weather conditions keep the hikers off.
+
+Data persistence
+Database appears to be the primary choice, but the running cost of holding a database
+with only a bunch of reservations is high.
+In many cases, the owners manage the reservation info locally. If the app can provide a way to
+display the info within an acceptable timeframe, it will be a help for both the owners and users.
+First, how to get the local data to the app?
+If the app provides an upload function, it is good but privilege management becomes necessary, additional cost.
+Using a flat file or Excel file seems to be a reasonable option, if concurrence access can be gracefully addressed. (Need to find more about this.)
+
+The web app is close to a static website.
+It is very helpful because the running cost can be significantly lower and the app doesn't get
+crashed easily.
+Moreover, if the app works well with mobile devices, it is also a pleasant thing.
+
+What about open source UI libraries?
+One option is to build UI components from scratch with plain technologies. It appears attractive
+because all the source codes can be seen. However, considering the time and effort saved by
+using it, an open source library is more preferrable, especially a widely used one, as it has been 
+intensively tested in production by its users.
+Chakara UI is one of these libraries. It's easy to use as well as intuitive in terms of style setting.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
