@@ -1,14 +1,9 @@
 import React, { useState } from 'react';
 import './Accordion.css';
 
-import MinusIcon from '../img/minus.png';
-import PlusIcon from '../img/plus.png';
 
 const Accordion = ({ title, content }) => {
   const [isActive, setIsActive] = useState(false);
-
-  const Minus = () => {return (<img src={MinusIcon} object-fit='cover' height='20px' />); };
-  const Plus = () => {return (<img src={PlusIcon} object-fit='cover' height='20px' />); };
 
   return (
     <div className="accordion-item">
